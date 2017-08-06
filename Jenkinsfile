@@ -8,7 +8,7 @@ node("docker") {
         println commit_id
     
         stage "build"
-        def app = docker.build "jenkins-maven-slave"
+        def app = docker.build "manee2k6/explore"
     
         stage "publish"
         app.push 'master'
